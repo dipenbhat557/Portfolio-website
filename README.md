@@ -26,11 +26,11 @@ Before you begin, ensure you have [Node.js](https://nodejs.org/) and [npm](https
 
 1. Clone the repository:
 
-   git clone https://github.com/your-username/portfolio-website.git
+   git clone https://github.com/dipenbhat557/3-d-Portfolio.git
 
 2. Change into the project directory:
 
-cd portfolio-website
+cd 3-d-Portfolio
 
 3. Install the project dependencies:
 
@@ -52,7 +52,37 @@ npm run dev
 
 yarn dev
 
-2. Open your web browser and navigate to http://localhost:3000 to view the portfolio website.
+2. Open your web browser and navigate to http://localhost:5173/ to view the portfolio website.
+
+3. Install Tailwind CSS and Initialize Configuration:
+
+npm install -D tailwindcss
+npx tailwindcss init
+
+<!-- These commands install Tailwind CSS as a development dependency and initialize its configuration. -->
+
+4. Install React-Related Packages:
+
+npm install --legacy-peer-deps @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom
+
+<!-- These commands install various React-related packages and dependencies required for your project. -->
+
+5. Install PostCSS and Autoprefixer for Tailwind CSS:
+
+npm install --legacy-peer-deps -D postcss autoprefixer
+npx tailwindcss init -p
+
+<!-- These commands install PostCSS and Autoprefixer, which are needed to make Tailwind CSS work with Vite. The second command initializes the PostCSS configuration for Tailwind CSS. -->
+
+6. Install Three.js:
+
+npm install --legacy-peer-deps three
+
+<!-- This command installs the Three.js library for 3D graphics rendering. -->
+
+7. Open your web browser and access the project:
+
+Open your web browser and navigate to http://localhost:5173/ to view the project.
 
 <!-- Contributing -->
 
