@@ -1,28 +1,27 @@
 import {
-  mobile,
   backend,
-  creator,
   web,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
   tailwind,
-  nodejs,
-  mongodb,
   git,
-  figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  springBoot,
+  jsp,
+  mysql,
+  thymeleaf,
+  postgresql,
+  microservices,
+  hibernate,
+  aws,
+  digitalocean,
+  foss,
+  gdsc,
+  techBlog,
+  contactManager,
+  whatsapp,
 } from "../assets";
 
 export const navLinks = [
@@ -47,124 +46,93 @@ const services = [
   },
   {
     title: "Spring Boot Developer",
-    icon: mobile,
+    icon: springBoot,
   },
   {
     title: "Backend Developer",
     icon: backend,
   },
-  {
-    title: "Content Creator",
-    icon: creator,
-  },
 ];
 
 const technologies = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
     name: "JavaScript",
     icon: javascript,
-  },
-  {
-    name: "TypeScript",
-    icon: typescript,
   },
   {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
     name: "Tailwind CSS",
     icon: tailwind,
-  },
-  {
-    name: "Node JS",
-    icon: nodejs,
-  },
-  {
-    name: "MongoDB",
-    icon: mongodb,
-  },
-  {
-    name: "Three JS",
-    icon: threejs,
   },
   {
     name: "git",
     icon: git,
   },
   {
-    name: "figma",
-    icon: figma,
-  },
-  {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "spring boot",
+    icon: springBoot,
+  },
+  {
+    name: "jsp",
+    icon: jsp,
+  },
+  {
+    name: "mysql",
+    icon: mysql,
+  },
+  {
+    name: "postgresql",
+    icon: postgresql,
+  },
+  {
+    name: "microservices",
+    icon: microservices,
+  },
+  {
+    name: "hibernate",
+    icon: hibernate,
+  },
+  {
+    name: "aws",
+    icon: aws,
+  },
+  {
+    name: "digitalocean",
+    icon: digitalocean,
   },
 ];
 
 const experiences = [
   {
-    title: "React.js Developer",
-    company_name: "Starbucks",
-    icon: starbucks,
+    title: "Backend Facilitator",
+    company_name: "Google DSC FETJU",
+    icon: gdsc,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "July 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Leading backend development efforts for web applications using Spring Boot.",
+      "Optimizing database queries and improving server performance.",
+      "Integrating third-party APIs to enhance application functionality.",
     ],
   },
   {
-    title: "React Native Developer",
-    company_name: "Tesla",
-    icon: tesla,
+    title: "Technical Officer",
+    company_name: "FOSS",
+    icon: foss,
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "September 2023 - Present",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Web Developer",
-    company_name: "Shopify",
-    icon: shopify,
-    iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
-    ],
-  },
-  {
-    title: "Full stack Developer",
-    company_name: "Meta",
-    icon: meta,
-    iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
-    points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Managing technical aspects of open-source projects and contributing code.",
+      "Implementing best practices for software development and version control.",
+      "Troubleshooting and resolving technical issues in collaboration with the community.",
+      "Promoting open-source initiatives through advocacy and educational events.",
     ],
   },
 ];
@@ -198,67 +166,71 @@ const testimonials = [
 
 const projects = [
   {
-    name: "Car Rent",
+    name: "Whatsapp Clone",
     description:
-      "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
+      "A real-time messaging application that replicates the functionality of WhatsApp, allowing users to send text messages, images, videos, and documents to their contacts.",
     tags: [
       {
         name: "react",
         color: "blue-text-gradient",
       },
       {
-        name: "mongodb",
-        color: "green-text-gradient",
-      },
-      {
-        name: "tailwind",
+        name: "mysql",
         color: "pink-text-gradient",
       },
+      {
+        name: "tailwindcss",
+        color: "white-text-gradient",
+      },
+      {
+        name: "springboot",
+        color: "green-text-gradient",
+      },
     ],
-    image: carrent,
-    source_code_link: "https://github.com/",
+    image: whatsapp,
+    source_code_link: "https://github.com/dipenbhat557/Whatsapp-clone",
   },
   {
-    name: "Job IT",
+    name: "Tech Blog",
     description:
-      "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+      "A blogging platform where users can write and publish articles on various technology topics, read articles from other authors, and engage in discussions through comments.",
     tags: [
       {
-        name: "react",
+        name: "JSP",
         color: "blue-text-gradient",
       },
       {
-        name: "restapi",
+        name: "servlet",
         color: "green-text-gradient",
       },
       {
-        name: "scss",
+        name: "mysql",
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
-    source_code_link: "https://github.com/",
+    image: techBlog,
+    source_code_link: "https://github.com/dipenbhat557/TechBlog",
   },
   {
-    name: "Trip Guide",
+    name: "Contact Manager",
     description:
-      "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
+      "An application for managing and organizing contacts, including features for adding, editing, and deleting contacts, as well as searching for specific contacts.",
     tags: [
       {
-        name: "nextjs",
+        name: "thymeleaf",
         color: "blue-text-gradient",
       },
       {
-        name: "supabase",
+        name: "springboot",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "mysql",
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
-    source_code_link: "https://github.com/",
+    image: contactManager,
+    source_code_link: "https://github.com/dipenbhat557/Smart-Contact-Manager",
   },
 ];
 

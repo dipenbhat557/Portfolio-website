@@ -1,21 +1,65 @@
-<!-- react using vite -->
+# Portfolio Website
 
-npm create vite@latest ./ -- --template react
+![Project Demo](portfolio.mp4)
 
-<!-- tailwind css -->
+This is my portfolio website built using Vite, React, and Three.js. It showcases my skills, experiences, and projects in a 3D interactive format.
 
-npm install -D tailwindcss
-npx tailwindcss init
+## Table of Contents
 
-<!-- react tilt series of packages-->
+- [Features](#features)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Contributing](#contributing)
+- [License](#license)
 
-npm install --legacy-peer-deps<!--for using older libraries--> @react-three/fiber @react-three/drei maath react-tilt react-vertical-timeline-component @emailjs/browser framer-motion react-router-dom
+## Features
 
-<!-- for working of tailwind css with vite  -->
+- **3D Portfolio:** Explore my portfolio in an immersive 3D environment.
+- **Interactive:** Navigate through different sections with ease.
+- **Responsive:** Designed to work well on both desktop and mobile devices.
+- **Real Projects:** Display real-world projects with descriptions and links.
+- **Contact:** Send me a message directly from the website.
 
-npm install --legacy-peer-deps -D postcss autoprefixer
-npx tailwindcss init -p
+## Installation
 
-<!-- installing three -->
+Before you begin, ensure you have [Node.js](https://nodejs.org/) and [npm](https://www.npmjs.com/) (or [Yarn](https://yarnpkg.com/)) installed.
 
-npm install --legacy-peer-deps three
+1. Clone the repository:
+
+   git clone https://github.com/your-username/portfolio-website.git
+
+2. Change into the project directory:
+
+cd portfolio-website
+
+3. Install the project dependencies:
+
+npm install
+
+# or
+
+yarn install
+
+<!-- Usage -->
+
+**To run the project locally, follow these steps:**
+
+1. Start the development server:
+
+npm run dev
+
+# or
+
+yarn dev
+
+2. Open your web browser and navigate to http://localhost:3000 to view the portfolio website.
+
+<!-- Contributing -->
+
+**Contributions are welcome! If you'd like to contribute to this project, please follow these guidelines:**
+
+1. Fork the repository on GitHub.
+2. Create a new branch from the main branch for your changes.
+3. Make your changes and commit them with clear and concise messages.
+4. Push your changes to your fork.
+5. Create a pull request to the main branch of the original repository.

@@ -9,26 +9,27 @@ import close from "./close.svg";
 
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
-import figma from "./tech/figma.png";
+import springBoot from "./tech/springBoot.jpg";
 import git from "./tech/git.png";
 import html from "./tech/html.png";
 import javascript from "./tech/javascript.png";
-import mongodb from "./tech/mongodb.png";
-import nodejs from "./tech/nodejs.png";
 import reactjs from "./tech/reactjs.png";
-import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import typescript from "./tech/typescript.png";
-import threejs from "./tech/threejs.svg";
+import jsp from "./tech/jsp.jpg";
+import mysql from "./tech/mysql.jpg";
+import thymeleaf from "./tech/thymeleaf.jpg";
+import postgresql from "./tech/postgresql.png";
+import microservices from "./tech/microservices.jpg";
+import hibernate from "./tech/hibernate.jpg";
+import aws from "./tech/aws.png";
+import digitalocean from "./tech/digitalocean.jpg";
 
-import meta from "./company/meta.png";
-import shopify from "./company/shopify.png";
-import starbucks from "./company/starbucks.png";
-import tesla from "./company/tesla.png";
+import foss from "./company/foss.jpg";
+import gdsc from "./company/gdsc.jpg";
 
-import carrent from "./carrent.png";
-import jobit from "./jobit.png";
-import tripguide from "./tripguide.png";
+import contactManager from "./contactManager.jpg";
+import techBlog from "./techBlog.jpg";
+import whatsapp from "./whatsapp.jpg";
 
 export {
   logo,
@@ -41,22 +42,23 @@ export {
   close,
   css,
   docker,
-  figma,
   git,
   html,
   javascript,
-  mongodb,
-  nodejs,
   reactjs,
-  redux,
   tailwind,
-  typescript,
-  threejs,
-  meta,
-  shopify,
-  starbucks,
-  tesla,
-  carrent,
-  jobit,
-  tripguide,
+  springBoot,
+  jsp,
+  mysql,
+  thymeleaf,
+  postgresql,
+  microservices,
+  hibernate,
+  aws,
+  digitalocean,
+  foss,
+  gdsc,
+  contactManager,
+  techBlog,
+  whatsapp,
 };

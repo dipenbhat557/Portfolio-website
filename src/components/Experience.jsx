@@ -10,6 +10,7 @@ import { experiences } from "../constants";
 import { SectionWrapper } from "../hoc";
 import { textVariant } from "../utils/motion";
 
+// ExperienceCard component for rendering individual work experiences
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
     contentStyle={{ background: "#1d1836", color: "#fff" }}
@@ -27,7 +28,9 @@ const ExperienceCard = ({ experience }) => (
     }
   >
     <div>
+      {/* Experience title */}
       <h3 className="text-white text-[24px] font-bold">{experience.title}</h3>
+      {/* Company name */}
       <p
         className="text-secondary text-[16px] font-semibold"
         style={{ margin: 0 }}
@@ -35,6 +38,7 @@ const ExperienceCard = ({ experience }) => (
         {experience.company_name}
       </p>
     </div>
+    {/* List of experience points */}
     <ul className="mt-5 list-disc ml-5 space-y-2">
       {experience.points.map((point, index) => (
         <li
@@ -48,15 +52,18 @@ const ExperienceCard = ({ experience }) => (
   </VerticalTimelineElement>
 );
 
+// Experience component that displays work experiences in a timeline
 const Experience = () => {
   return (
     <>
+      {/* Introduction section */}
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>What I have done so far</p>
         <h2 className={styles.sectionHeadText}>Work Experience</h2>
       </motion.div>
 
       <div className="mt-20 flex flex-col">
+        {/* Vertical timeline */}
         <VerticalTimeline>
           {experiences.map((experience, index) => (
             <ExperienceCard
@@ -70,4 +77,5 @@ const Experience = () => {
   );
 };
 
+// Export the Experience component with SectionWrapper
 export default SectionWrapper(Experience, "work");

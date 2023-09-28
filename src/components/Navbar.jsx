@@ -5,6 +5,7 @@ import { navLinks } from "../constants";
 import { logo, menu, close } from "../assets";
 
 const Navbar = () => {
+  // State to track the active link and toggle for mobile menu
   const [active, setActive] = useState("");
   const [toggle, setToggle] = useState(false);
 
@@ -13,6 +14,7 @@ const Navbar = () => {
       className={`${styles.paddingX} w-full flex items-center py-5 fixed top-0 z-20 bg-primary`}
     >
       <div className="w-full flex justify-between items-center max-width-7xl mx-auto">
+        {/* Logo and site title */}
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -26,6 +28,8 @@ const Navbar = () => {
             Dipendra
           </p>
         </Link>
+
+        {/* Desktop navigation */}
         <ul className="list-none hidden sm:flex flex-row gap-10">
           {navLinks.map((link) => (
             <li
@@ -40,6 +44,7 @@ const Navbar = () => {
           ))}
         </ul>
 
+        {/* Mobile menu */}
         <div className="sm:hidden flex flex-1 justify-end items-center">
           <img
             src={toggle ? close : menu}
@@ -48,6 +53,7 @@ const Navbar = () => {
             onClick={() => setToggle(!toggle)}
           />
 
+          {/* Mobile menu items */}
           <div
             className={`${
               !toggle ? "hidden" : "flex"

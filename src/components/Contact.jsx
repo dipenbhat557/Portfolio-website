@@ -7,6 +7,7 @@ import { EarthCanvas } from "./canvas";
 import { SectionWrapper } from "../hoc";
 import { slideIn } from "../utils/motion";
 
+// Contact component for displaying contact form and EarthCanvas
 const Contact = () => {
   const formRef = useRef();
   const [form, setForm] = useState({
@@ -16,19 +17,18 @@ const Contact = () => {
   });
   const [loading, setLoading] = useState(false);
 
+  // Handle input changes
   const handleChange = (e) => {
     const { name, value } = e.target;
-
     setForm({ ...form, [name]: value });
   };
 
+  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     setLoading(true);
 
-    // service_htp2klw
-    // template_a9c3yzv
-    // 70gtdMrv58XYFp0DP
+    // Send email using emailjs
     emailjs
       .send(
         "service_htp2klw",
@@ -47,6 +47,7 @@ const Contact = () => {
           setLoading(false);
           alert("Thank you. I will get back to you as soon as possible.");
 
+          // Clear the form after successful submission
           setForm({
             name: "",
             email: "",
@@ -63,6 +64,7 @@ const Contact = () => {
 
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
+      {/* Contact form section */}
       <motion.div
         variants={slideIn("left", "tween", 0.2, 1)}
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
@@ -70,6 +72,7 @@ const Contact = () => {
         <p className={styles.sectionSubText}>Get in touch</p>
         <h3 className={styles.sectionHeadText}>Contact</h3>
 
+        {/* Contact form */}
         <form
           ref={formRef}
           onSubmit={handleSubmit}
@@ -109,6 +112,7 @@ const Contact = () => {
             />
           </label>
 
+          {/* Submit button */}
           <button
             type="submit"
             className="bg-tertiary py-3 px-8 rounded-xl outline-none w-fit text-white font-bold shadow-md shadow-primary"
@@ -118,6 +122,7 @@ const Contact = () => {
         </form>
       </motion.div>
 
+      {/* EarthCanvas section */}
       <motion.div
         variants={slideIn("right", "tween", 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
@@ -128,4 +133,5 @@ const Contact = () => {
   );
 };
 
+// Export the Contact component with SectionWrapper
 export default SectionWrapper(Contact, "contact");

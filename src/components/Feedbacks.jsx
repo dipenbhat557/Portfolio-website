@@ -5,6 +5,7 @@ import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 import { testimonials } from "../constants";
 
+// FeedbackCard component for rendering individual feedback cards
 const FeedbackCard = ({
   index,
   testimonial,
@@ -19,18 +20,23 @@ const FeedbackCard = ({
   >
     <p className="text-white font-black text-[48px]"></p>
     <div className="mt-1">
+      {/* Display testimonial text */}
       <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
       <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
+          {/* Display name */}
           <p className="text-white font-medium text-[16px]">
             <span className="blue-text-gradient">@</span>
             {name}
           </p>
+
+          {/* Display designation and company */}
           <p className="mt-1 text-secondary text-[12px]">
             {designation} of {company}
           </p>
         </div>
 
+        {/* Display image */}
         <img
           src={image}
           alt={`feedback-by-${name}`}
@@ -41,12 +47,14 @@ const FeedbackCard = ({
   </motion.div>
 );
 
+// Feedbacks component that displays a list of feedback cards
 const Feedbacks = () => {
   return (
     <div className="mt-12 bg-black-100 rounded-[20px]">
       <div
         className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}
       >
+        {/* Introduction section */}
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>
           <h2 className={styles.sectionHeadText}>Testimonials</h2>
