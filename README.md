@@ -26,7 +26,7 @@ Before you begin, ensure you have [Node.js](https://nodejs.org/) and [npm](https
 
 1. Clone the repository:
 
-   git clone https://github.com/dipenbhat557/3-d-Portfolio.git
+   git clone git@github.com:dipenbhat557/Portfolio-website.git
 
 2. Change into the project directory:
 
